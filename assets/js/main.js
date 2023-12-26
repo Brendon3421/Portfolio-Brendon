@@ -105,4 +105,4 @@ async function fetchApi(url) {
   CITY.innerText = `${name}:`;
   TEMPERATURE.innerText = `${temperature} ºC`;
 }
-alert("Bem-Vindo ao Meu Portfólio Olá a todos!É um prazer recebê-los no meu espaço digital, onde compartilho o resultado da minha jornada na programação. Meu nome é Brendon Rogério Bernardi, tenho 16 anos e sou apaixonado por explorar o mundo da tecnologia");
+alert("Bem-Vindo ao Meu Portfólio Olá a todos!É um prazer recebê-los no meu espaço digital, onde compartilho o resultado da minha jornada na programação. Meu nome é Brendon Rogério Bernardi, tenho 16 anos ");
