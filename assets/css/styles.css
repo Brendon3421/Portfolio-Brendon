@@ -362,7 +362,31 @@ img {
   position: relative;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
+  max-width: 100%;
+
+  height: 200px;
+
   overflow: hidden;
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+  
+}
+
+.work__img img {
+  width: 100%;
+  height: 100%;
+  /* Faz a imagem ocupar toda a altura do contêiner */
+  object-fit: cover;
+  /* Garante que a imagem cubra o contêiner sem distorção */
+  transition: transform 0.5s ease;
+}
+
+.work__img:hover img {
+  transform: scale(1.2) translateY(-10%);
+  /* Ajusta o zoom e move a imagem para cima */
 }
 
 .overlay {
@@ -377,6 +401,7 @@ img {
 
 .work__img:hover .overlay {
   height: 100%;
+  /* Mostra a sobreposição ao passar o mouse */
 }
 
 .text {
@@ -393,16 +418,8 @@ img {
 
 .work__img:hover .text {
   opacity: 1;
+  /* Mostra o texto ao passar o mouse */
 }
-
-.work__img img {
-  transition: transform 0.5s ease;
-}
-
-.work__img:hover img {
-  transform: scale(1.5);
-}
-
 
 
 /* ===== CONTACT =====*/
@@ -862,7 +879,8 @@ a.dark-mode {
   border-radius: 6px;
   padding: 8px 10px;
   position: absolute;
-  bottom: 70px; /* Adjusted to move above the icon */
+  bottom: 70px;
+  /* Adjusted to move above the icon */
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
