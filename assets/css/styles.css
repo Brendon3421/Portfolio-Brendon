@@ -654,6 +654,7 @@ a.dark-mode {
   --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
 }
 
+
 .theme-switch,
 .theme-switch *,
 .theme-switch *::before,
@@ -661,7 +662,7 @@ a.dark-mode {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 2;
   font-size: var(--toggle-size);
 }
 
